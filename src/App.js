@@ -1,5 +1,5 @@
 import "./App.css";
-import AdviceCard from "./components/AdviceCard";
+import AdviceCard from "./AdviceCard";
 
 function App() {
   return (
