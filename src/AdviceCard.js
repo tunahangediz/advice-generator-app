@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
 import { useEffect, useState } from "react";
-import {
-  exportComponentAsJPEG,
-  exportComponentAsPDF,
-  exportComponentAsPNG,
-} from "react-component-export-image";
+// import {
+//   exportComponentAsJPEG,
+//   exportComponentAsPDF,
+//   exportComponentAsPNG,
+// } from "react-component-export-image";
 
 function AdviceCard() {
   const [advice, setAdvice] = useState("");
@@ -31,10 +31,6 @@ function AdviceCard() {
   //   handleClick();
   // }, 7000);
 
-  const handleSave = (e) => {
-    e.preventDefault();
-    window.print();
-  };
   return (
     <div ref={componentRef} className="advice-card-outer">
       <div className="inner-card">
@@ -54,12 +50,12 @@ function AdviceCard() {
       <div onClick={handleClick} className="dice-div">
         <img src="/images/icon-dice.svg" alt="" ref={ref} />
       </div>
-      <div
-        onClick={() => exportComponentAsJPEG(componentRef)}
+      {/* <div
+        // onClick={() => exportComponentAsJPEG(componentRef)}
         className="save-div"
       >
         ↓
-      </div>
+      </div> */}
     </div>
   );
 }
